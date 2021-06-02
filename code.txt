@@ -1,0 +1,18 @@
+bseven=Button(main,text="720p",font=("verdana",18),relief='raised')
+bseven.pack(side=TOP,pady=10)
+bfour=Button(main,text="480p",font=("verdana",18),relief='raised')
+bfour.pack(side=TOP,pady=10)
+bthree=Button(main,text="360p",font=("verdana",18),relief='raised')
+bthree.pack(side=TOP,pady=10)
+
+def choice(self,buttonid):
+    if buttonid==1:
+        bseven = Button(main, text="720p", font=("verdana", 18), relief='raised', command=StartDownloadThread720)
+        bseven.pack(side=TOP, pady=10)
+    elif buttonid == 2:
+        bfour = Button(main, text="480p", font=("verdana", 18), relief='raised', command=StartDownloadThread480)
+        bfour.pack(side=TOP, pady=10)
+    else:
+        bthree = Button(main, text="360p", font=("verdana", 18), relief='raised', command=StartDownloadThread360)
+        bthree.pack(side=TOP, pady=10)
+
